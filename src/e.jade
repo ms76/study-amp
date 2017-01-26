@@ -1,0 +1,24 @@
+extend layout
+block script
+  script(async, custom-element="amp-accordion", src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js")
+block body
+  body
+    h1 Hello AMP!
+
+    h2 accordion
+    amp-accordion
+      section(expanded)
+        h3 Section 1
+        p Bunch of awesome content
+      section
+        h3 Section 2
+        div Bunch of awesome content
+      section
+        h3 Section 3
+        amp-img(src="https://otakumode.com/images/logo.png", width="80", height="65")
+
+    ul
+      li
+        a(href="d.html#development=1") Prev
+      li
+        a(href="f.html#development=1") Next

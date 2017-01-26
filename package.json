@@ -1,0 +1,19 @@
+{
+  "name": "study-amp",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^2.3.1",
+    "gulp-watch": "^4.3.5",
+    "jade": "^1.11.0",
+    "stylus": "^0.54.2"
+  }
+}

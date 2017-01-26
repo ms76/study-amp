@@ -1,0 +1,74 @@
+doctype html
+html(⚡)
+  head
+    meta(charset="utf-8")
+    link(rel="canonical", href="a.html")
+    meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1")
+    style(amp-boilerplate)
+      include ../dest/boilerplate.css
+    noscript
+      style(amp-boilerplate).
+        body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+
+    style(amp-custom)
+      :stylus
+        h1
+          background: black
+          margin: 0
+          text-align: center
+          color: #fff
+    script(async, src="https://cdn.ampproject.org/v0.js")
+    script(async, custom-element="amp-accordion", src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js")
+    script(async, custom-element="amp-youtube", src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js")
+    script(async, custom-element="amp-carousel", src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js")
+    script(async, custom-element="amp-image-lightbox", src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js")
+    script(async, custom-element="amp-instagram", src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js")
+    script(async, custom-element="amp-anim", src="https://cdn.ampproject.org/v0/amp-anim-0.1.js")
+    script(async, custom-element="amp-twitter", src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js")
+
+  body
+    h1 Hello AMP!
+
+    h2 img
+    amp-img(src="https://d3ieicw58ybon5.cloudfront.net/full/u/58cc426560c146f596e26a187c64795b.jpg", width="376", height="250", layout="responsive")
+
+    h2 YouTube
+    amp-youtube(data-videoid="eVgNy-XNEeI", width="300", height="150", layout="responsive")
+
+    h2 accordion
+    amp-accordion
+      section(expanded)
+        h3 Section 1
+        p Bunch of awesome content
+      section
+        h3 Section 2
+        div Bunch of awesome content
+      section
+        h3 Section 3
+        amp-img(src="/awesome.png", width="300", height="300")
+
+    h2 Anime GIF
+    amp-anim(width=500, height=281, src="./image/aritaso.gif", layout="responsive")
+      amp-img(placeholder, width=500, height=281, src="./image/aritaso.jpg", layout="responsive")
+
+    h2 Instagram
+    amp-instagram(data-shortcode="BDuO8hlmYHJ", width="400", height="400", layout="responsive")
+
+    h2 Twitter
+    amp-twitter(width=660, height=657, layout="responsive", data-tweetid="720559784177500161")
+
+    h2 Carousel
+    amp-carousel(width="400", height="256", layout="responsive", type="slides", delay=2000)
+      amp-img(src="https://d3ieicw58ybon5.cloudfront.net/ex/400.266/u/3cbe3b19d1514e2c9948e1cda3e13334.jpg",
+        width="400",
+        height="256",
+        layout="responsive")
+      amp-img(src="https://d3ieicw58ybon5.cloudfront.net/ex/400.266/u/c4413e521586470ba5166c48943346ce.jpg",
+        width="400",
+        height="256",
+        layout="responsive")
+      amp-img(src="https://d3ieicw58ybon5.cloudfront.net/ex/400.266/u/b3c3a5dd658040d187c8104a928baa62.jpg",
+        width="400",
+        height="256",
+        layout="responsive")
+

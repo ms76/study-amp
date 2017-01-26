@@ -1,0 +1,24 @@
+doctype html
+html(⚡)
+  head
+    meta(charset="utf-8")
+    link(rel="canonical", href="a.html")
+    meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1")
+    style(amp-boilerplate)
+      include ../dest/boilerplate.css
+    noscript
+      style(amp-boilerplate).
+        body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+    style(amp-custom)
+      :stylus
+        div
+        a
+          font-size: 1.4em
+        h1
+          background: black
+          margin: 0
+          text-align: center
+          color: #fff
+    script(async, src="https://cdn.ampproject.org/v0.js")
+    block script
+  block body

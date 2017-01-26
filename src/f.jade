@@ -1,0 +1,15 @@
+extend layout
+block script
+  script(async, custom-element="amp-youtube", src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js")
+block body
+  body
+    h1 Hello AMP!
+
+    h2 YouTube
+    amp-youtube(data-videoid="eVgNy-XNEeI", width="300", height="150", layout="responsive")
+
+    ul
+      li
+        a(href="e.html#development=1") Prev
+      li
+        a(href="g.html#development=1") Next

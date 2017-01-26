@@ -1,0 +1,15 @@
+extend layout
+block script
+  script(async, custom-element="amp-twitter", src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js")
+block body
+  body
+    h1 Hello AMP!
+
+    h2 Twitter
+    amp-twitter(width=660, height=657, layout="responsive", data-tweetid="720559784177500161")
+
+    ul
+      li
+        a(href="j.html#development=1") Prev
+      li
+        a(href="a.html#development=1") First

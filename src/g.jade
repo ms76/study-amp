@@ -1,0 +1,27 @@
+extend layout
+block script
+  script(async, custom-element="amp-carousel", src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js")
+block body
+  body
+    h1 Hello AMP!
+
+    h2 Carousel
+    amp-carousel(width="600", height="384", layout="responsive", type="slides", delay=2000)
+      amp-img(src="https://d3ieicw58ybon5.cloudfront.net/ex/600.384/u/3cbe3b19d1514e2c9948e1cda3e13334.jpg",
+        width="600",
+        height="384",
+        layout="responsive")
+      amp-img(src="https://d3ieicw58ybon5.cloudfront.net/ex/600.384/u/c4413e521586470ba5166c48943346ce.jpg",
+        width="600",
+        height="384",
+        layout="responsive")
+      amp-img(src="https://d3ieicw58ybon5.cloudfront.net/ex/600.384/u/b3c3a5dd658040d187c8104a928baa62.jpg",
+        width="600",
+        height="384",
+        layout="responsive")
+
+    ul
+      li
+        a(href="f.html#development=1") Prev
+      li
+        a(href="h.html#development=1") Next

@@ -1,0 +1,22 @@
+extend layout
+block script
+  script(async, custom-element="amp-image-lightbox", src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js")
+block body
+  body
+    h1 Hello AMP!
+
+    h2 Lightbox
+    amp-img(
+      on="tap:lightbox1",
+      role="button",
+      tabindex="0",
+      src="https://d3ieicw58ybon5.cloudfront.net/ex/800.512/u/b3c3a5dd658040d187c8104a928baa62.jpg",
+      width=200,
+      height=128)
+    amp-image-lightbox#lightbox1(layout="nodisplay")
+
+    ul
+      li
+        a(href="g.html#development=1") Prev
+      li
+        a(href="i.html#development=1") Next
